@@ -1,0 +1,219 @@
+/* Google Calendar Dark Mode Polish - Compact & Clean */
+
+/* Override react-big-calendar default styles */
+.rbc-calendar {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Month view cells */
+.rbc-month-view {
+  background: #0a0a0a;
+  border: none;
+}
+
+.rbc-month-row {
+  border: none;
+}
+
+.rbc-day-bg {
+  border-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+.rbc-off-range-bg {
+  background: #050505;
+}
+
+.rbc-today {
+  background-color: rgba(59, 130, 246, 0.08) !important;
+}
+
+/* Header styling - COMPACT */
+.rbc-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  padding: 6px 4px !important;
+  /* Reduced from 12px */
+  font-size: 0.6875rem !important;
+  /* 11px - smaller */
+  font-weight: 500 !important;
+  /* Lighter weight */
+  color: #6b7280 !important;
+  /* Lighter gray */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Date cells - COMPACT */
+.rbc-date-cell {
+  padding: 4px 6px !important;
+  /* Reduced padding */
+  text-align: right;
+}
+
+.rbc-date-cell>a {
+  color: #9ca3af !important;
+  /* Lighter */
+  font-size: 0.75rem !important;
+  /* 12px - smaller */
+  font-weight: 400 !important;
+  /* Normal weight */
+}
+
+.rbc-off-range .rbc-date-cell>a {
+  color: #4b5563 !important;
+}
+
+.rbc-now .rbc-date-cell>a {
+  color: #3b82f6 !important;
+  font-weight: 600 !important;
+  background: rgba(59, 130, 246, 0.15);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+
+/* Event containers - SINGLE LINE COMPACT */
+.rbc-event {
+  padding: 0 !important;
+  border: none !important;
+  margin-bottom: 1px !important;
+  /* Tight spacing */
+}
+
+.rbc-event-label {
+  display: none;
+}
+
+.rbc-event-content {
+  padding: 0 !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  /* Single line */
+  text-overflow: ellipsis !important;
+  /* ... for overflow */
+  line-height: 1.2 !important;
+}
+
+/* Ensure high contrast white text */
+.rbc-event-content * {
+  color: #ffffff !important;
+  font-size: 0.75rem !important;
+  /* 12px */
+}
+
+/* Selected event */
+.rbc-selected {
+  outline: 2px solid rgba(59, 130, 246, 0.5);
+  outline-offset: 1px;
+}
+
+/* Week/Day view */
+.rbc-time-view {
+  background: #0a0a0a;
+  border: none;
+}
+
+.rbc-time-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.rbc-time-content {
+  border-top: none;
+}
+
+.rbc-time-slot {
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.rbc-current-time-indicator {
+  background-color: #3b82f6;
+  height: 2px;
+}
+
+.rbc-timeslot-group {
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.rbc-time-header-content {
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.rbc-time-gutter {
+  color: #6b7280;
+  font-size: 0.75rem;
+}
+
+/* Agenda view */
+.rbc-agenda-view {
+  background: #0a0a0a;
+}
+
+.rbc-agenda-table {
+  border: none;
+}
+
+.rbc-agenda-date-cell,
+.rbc-agenda-time-cell,
+.rbc-agenda-event-cell {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #d1d5db;
+  padding: 12px 16px;
+}
+
+.rbc-agenda-date-cell {
+  color: #9ca3af;
+  font-weight: 600;
+}
+
+/* Toolbar (if using default) */
+.rbc-toolbar {
+  display: none;
+  /* We have custom toolbar */
+}
+
+/* Show more link */
+.rbc-show-more {
+  background-color: transparent;
+  color: #3b82f6;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 4px;
+  margin: 2px 0;
+  border-radius: 2px;
+}
+
+.rbc-show-more:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+/* Overlay for "show more" popup */
+.rbc-overlay {
+  background: #1e1e1e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+  padding: 8px;
+}
+
+.rbc-overlay-header {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 8px 12px;
+  margin: -8px -8px 8px -8px;
+  font-weight: 600;
+  color: #e5e7eb;
+  font-size: 0.875rem;
+}
+
+/* Selection */
+.rbc-slot-selection {
+  background-color: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.5);
+}
+
+/* Drag and drop */
+.rbc-addons-dnd-dragging {
+  opacity: 0.5;
+}
+
+.rbc-addons-dnd-over {
+  background-color: rgba(59, 130, 246, 0.1);
+}

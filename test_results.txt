@@ -1,0 +1,38 @@
+﻿--- Step 1: Inserting Polymorphic Items ---
+Γ£à Test items inserted and saved to disk.
+
+--- Step 2: Verifying Retrieval & Metadata Parsing ---
+
+[Item 1]
+Title:    Quarterly Review
+Type:     task
+Domain:   work
+Metadata: { department: 'Strategy', focus: 'Q1 Targets' }
+
+[Item 2]
+Title:    Meditation
+Type:     habit
+Domain:   life
+Metadata: { streak: 12, best_streak: 20 }
+Γ£à Habit Streak Check: PASSED
+
+[Item 3]
+Title:    Buy S&P500
+Type:     event
+Domain:   invest
+Metadata: { ticker: 'VOO', amount: 500, currency: 'USD' }
+Γ£à Invest Ticker Check: PASSED
+
+[Item 4]
+Title:    Finish TypeScript Book
+Type:     milestone
+Domain:   study
+Metadata: { chapters_read: 5, total_chapters: 12 }
+
+--- Summary statistics of calendar_items ---
+- event (invest): 1
+- event (life): 11
+- event (study): 1
+- habit (life): 1
+- milestone (study): 1
+- task (work): 1
